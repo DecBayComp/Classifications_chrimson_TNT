@@ -12,7 +12,7 @@ pip install -r requirements.txt
 Run the analysis with the following command:
 
 
-python3 script_name.py --name <line_name> --behav <behavior>
+python3 main_df.py --name <line_name> --behav <behavior>
 
     --name: The name of the line to analyze.
     --behav: Behavior to analyze, e.g., "hunch_large", "bend_large", "hunch_weak".
@@ -23,7 +23,12 @@ Results are saved as .pkl files in output/t7/{behav}/Data_t7_{behav}_{Line}.pkl.
 Notes
 
 Ensure the .mat files are placed in the appropriate directories (path_ in the code).
+
+
 2. Classifier Prediction
+
+python3 Code_prediction.py --name <line_name> 
+
 
 This script uses pre-trained models (CLF_HCSO, CLF_CHT) to classify larvae behavior based on extracted features.
 Functions
